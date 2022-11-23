@@ -70,7 +70,7 @@ function App() {
           <Button onClick={() => navigate("/form")}>Tasks</Button>
         </Grid>
       </Grid>
-      <AppRoutes />
+      <AppRoutes addTask={addTask}/> {/* just need to make sure you pass the props to the routes so the CustomForm component can work when called from there */}
 
       <header>
         <h1>My Task List</h1>
