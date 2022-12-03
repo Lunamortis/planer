@@ -17,6 +17,8 @@ const CustomForm = ({ addTask }) => {
   }
 
   return (
+
+    
     <form
       className="todo"
       onSubmit={handleFormSubmit}

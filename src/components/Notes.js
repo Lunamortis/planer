@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import NotesList from './NotesList';
 import Search from './Search';
 import Header from './Header';
-import styles from '../style/Notes.css';
+import '../style/notes.css';
 
 const App = () => {
 	const [notes, setNotes] = useState([
@@ -29,6 +29,7 @@ const App = () => {
 		// },
 	]);
 
+	
 	const [searchText, setSearchText] = useState('');
 
 	const [darkMode, setDarkMode] = useState(false);

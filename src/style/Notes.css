@@ -45,13 +45,13 @@ code {
 }
 
 .note.new {
-	background-color: #67d7cc;
+	background-color: rgb(30, 29, 29);
 }
 
 textarea {
 	border: none;
 	resize: none;
-	background-color: #67d7cc;
+	background-color: rgb(30, 29, 29);
 }
 
 textarea:focus {

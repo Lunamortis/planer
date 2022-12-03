@@ -17,7 +17,6 @@ export const MuiNavbar = () => {
                     <Stack direction="row" spacing={2}>
                         <Button onClick={() => navigate ("/LogIn")} color="inherit">Log in</Button>
                         <Button onClick={() => navigate ("/Form")} color="inherit">Tasks</Button>
-                        <Button onclick={() => navigate ("/CalendarWithBooking")} color="inherit">Calendar</Button>
                         <Button onClick={() => navigate ("/Notes")}color="inherit">Notes</Button>
                         <Button onClick={() => navigate ("/ContactUs")}color="inherit">Contact Us</Button>
                     </Stack>

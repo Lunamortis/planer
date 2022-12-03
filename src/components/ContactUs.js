@@ -1,40 +1,56 @@
-import { useState } from "react";
-const ContactUsForm = () => {
-    const [formState, setFormState] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-    
-    const handleChange = (e) => {
-        setFormState({
-        ...formState,
-        [e.target.name]: e.target.value,
-        });
-    };
-    
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(formState);
-    };
-    
-    return (
-        <form id="contact-form" onSubmit={handleSubmit} method="POST">
-        <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" defaultValue={formState.name} onChange={handleChange} name="name" />
-        </div>
-        <div>
-            <label htmlFor="email">Email address:</label>
-            <input type="email" defaultValue={formState.email} onChange={handleChange} name="email" />
-        </div>
-        <div>
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" defaultValue={formState.message} onChange={handleChange} rows="5" />
-        </div>
-        <button type="submit">Submit</button>
-        </form>
-    );
-}
+import {useState}from 'react';
+import '../style/Contact.css';
 
-export default ContactUsForm;
+const MuiContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, message);
+  };
+
+  return (
+    <div className="contact-form">
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </div>
+        <button type="submit" className="btn">
+          Send
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default MuiContactForm;
