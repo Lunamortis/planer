@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import NotesList from './NotesList';
 import Search from './Search';
 import Header from './Header';
-import '../style/notes.css';
+import './notes.css';
 
 const App = () => {
 	const [notes, setNotes] = useState([

@@ -2,68 +2,68 @@ import React from 'react';
 import { useState } from 'react'
 import { AppRoutes } from './routes/routes';
 import { MuiNavbar } from './components/MuiNavbar';
-import { MainForm } from './components/MainForm';
+
 
 // // custom hook
-// import useLocalStorage from './hooks/useLocalStorage';
+import useLocalStorage from './hooks/useLocalStorage';
 
-// // custom components
+// custom components
 // import CustomForm from './components/CustomForm'
-// import EditForm from './components/EditForm'
-// import TaskList from './components/TaskList'
+import EditForm from './components/todo/EditForm'
+import TaskList from './components/todo/TaskList'
 
 //task handling
 function App() {
-  // const [tasks, setTasks] = useLocalStorage(`react-todo.tasks`, []);
-  // const [previousFocusEl, setPreviousFocusEl] = useState(null);
-  // const [editedTask, setEditedTask] = useState(null);
-  // const [isEditing, setIsEditing] = useState(false);
+  const [tasks, setTasks] = useLocalStorage(`react-todo.tasks`, []);
+  const [previousFocusEl, setPreviousFocusEl] = useState(null);
+  const [editedTask, setEditedTask] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
 
-  // const addTask = (task) => {
-  //   setTasks(prevState => [...prevState, task])
-  // }
+  const addTask = (task) => {
+    setTasks(prevState => [...prevState, task])
+  }
 
-  // const deleteTask = (id) => {
-  //   setTasks(prevState => prevState.filter(t => t.id !== id));
-  // }
+  const deleteTask = (id) => {
+    setTasks(prevState => prevState.filter(t => t.id !== id));
+  }
 
-  // const toggleTask = (id) => {
-  //   setTasks(prevState => prevState.map(t => (
-  //     t.id === id
-  //       ? { ...t, checked: !t.checked }
-  //       : t
-  //   )))
-  // }
+  const toggleTask = (id) => {
+    setTasks(prevState => prevState.map(t => (
+      t.id === id
+        ? { ...t, checked: !t.checked }
+        : t
+    )))
+  }
 
-  // const updateTask = (task) => {
-  //   setTasks(prevState => prevState.map(t => (
-  //     t.id === task.id
-  //       ? { ...t, name: task.name }
-  //       : t
-  //   )))
-  //   closeEditMode();
-  // }
+  const updateTask = (task) => {
+    setTasks(prevState => prevState.map(t => (
+      t.id === task.id
+        ? { ...t, name: task.name }
+        : t
+    )))
+    closeEditMode();
+  }
 
-  // const closeEditMode = () => {
-  //   setIsEditing(false);
-  //   previousFocusEl.focus();
-  // }
+  const closeEditMode = () => {
+    setIsEditing(false);
+    previousFocusEl.focus();
+  }
 
-  // const enterEditMode = (task) => {
-  //   setEditedTask(task);
-  //   setIsEditing(true);
-  //   setPreviousFocusEl(document.activeElement);
-  // }
+  const enterEditMode = (task) => {
+    setEditedTask(task);
+    setIsEditing(true);
+    setPreviousFocusEl(document.activeElement);
+  }
 
   return (
     <div className="container1">
 
       <MuiNavbar />
-      <MainForm/>
+      
       <AppRoutes addTask={addTask} /> {/* just need to make sure you pass the props to the routes so the CustomForm component can work when called from there */}
 
-      {/* <header>
-        <h1>My Task List</h1>
+      <header>
+        <h1>hello world</h1>
       </header>
       {
         isEditing && (
@@ -74,7 +74,7 @@ function App() {
           />
         )
       }
-      <CustomForm addTask={addTask} />
+      {/* <CustomForm addTask={addTask} /> */}
       {tasks && (
         <TaskList
           tasks={tasks}
@@ -82,7 +82,7 @@ function App() {
           toggleTask={toggleTask}
           enterEditMode={enterEditMode}
         />
-      )} */}
+      )}
     </div>
   )
 }
