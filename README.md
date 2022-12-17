@@ -13,7 +13,7 @@ This project requires the following software to run
 * react
 * Firebase/Firestore 
 
-### Frontend Install
+## Frontend Install
 
 1. Download and install VS code
 2. If node.js is not installed then install it from  https://nodejs.org/en/download/  and chose your platform support
@@ -28,18 +28,18 @@ This project requires the following software to run
 
 7. Once the app is built it will give you a ip address both the local host and one to access over the network 
 
-### Backend Install
+## Backend Install
 
 1. Create a firebase account either a free tier or paid here https://firebase.google.com/?gclid=EAIaIQobChMIlauumvP_-wIVEFRgCh1r3QltEAAYASAAEgKDzfD_BwE&gclsrc=aw.ds 
 2. Once you have your account  create your project and set it as a web app
 Copy your unique identifier in to the firebase.js
 3. Click on authentication and create your login styles and add your private keys to your config
 
-### Project Use
+## Project Use
 
 Once the project is installed you will be able to locally store tasks and noted for offline use. you can create users in firestore and have them log in/out.
 
-### Credits
+## Credits
 
 * Jason Lee - Trainer IOD
 * Jo Batkin - Trainer IOD
@@ -47,7 +47,7 @@ Once the project is installed you will be able to locally store tasks and noted 
 * Web Dev Simplified - https://www.youtube.com/@WebDevSimplified - General help
 * Codevolution - https://www.youtube.com/@Codevolution - Material Ui guides
 
-### License  
+## License  
 
 MIT License
 
