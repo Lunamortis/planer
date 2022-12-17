@@ -15,8 +15,9 @@ const MuiContactForm = () => {
     <div className="contact-form">
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name</label>
+          <label className='form-label' htmlFor="name">Name</label>
           <input
+          className='message'
             type="text"
             name="name"
             id="name"
@@ -25,8 +26,9 @@ const MuiContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label className='form-label' htmlFor="email">Email</label>
           <input
+          className='message'
             type="email"
             name="email"
             id="email"
@@ -35,8 +37,9 @@ const MuiContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message</label>
+          <label className='form-label' htmlFor="message">Message</label>
           <textarea
+          className = "message"
             name="message"
             id="message"
             cols="30"
@@ -45,7 +48,7 @@ const MuiContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <button type="submit" className="btn">
+        <button type="submit" className="form-btn">
           Send
         </button>
       </form>

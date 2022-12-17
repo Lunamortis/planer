@@ -1,13 +1,13 @@
 import { AppBar, Toolbar, IconButton, Typography, Stack, Button } from '@mui/material';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
 import { useNavigate } from 'react-router-dom';
-// import styles from '../style/navbar.css'
+import'../style/navbar.css'
 
 
 export const MuiNavbar = () => {
     const navigate = useNavigate();
     return (
-        <AppBar position="static">
+        <AppBar className="navbarmain" position="static">
             <Toolbar>
                 <IconButton size="large" edge="start" color="inherit" aria-label="menu">
                     <HouseSidingIcon />

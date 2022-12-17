@@ -14,7 +14,7 @@ export const AppRoutes = (props) => {
             <Route path="/" element={<Notes />} />
             <Route path="/Form" element={<CustomForm {...props}/>} />
             <Route path= "/Notes" element={<Notes {...props}/>} />
-            <Route path="/todo/ContactUs" element={<ContactUs {...props}/>} />
+            <Route path="/ContactUs" element={<ContactUs {...props}/>} />
             <Route path="/LogIn" element={<LogIn {...props}/>} />
 
             <Route path="*" element={<h1>404: Not Found</h1>} />

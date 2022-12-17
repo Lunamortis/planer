@@ -1,0 +1,10 @@
+header.navbarmain{
+    background-color: #4A40BF;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 4rem;
+    margin-bottom: 20px;
+    border-radius: 100px;
+}

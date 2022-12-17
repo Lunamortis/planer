@@ -1,0 +1,40 @@
+.loginContainer{
+    background-color: rgb(30, 29, 29);;
+    border-color: #000000; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #C6513A;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.loginContainer input[type="text"], .loginContainer input[type="password"]{
+    background-color: #55504f;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+}
+
+.loginButton{
+    background-color: #4A40BF;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-label{
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 100px;
+    padding: 100px;
+    width: 100%;
+}
