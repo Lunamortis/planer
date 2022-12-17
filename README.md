@@ -41,11 +41,11 @@ Once the project is installed you will be able to locally store tasks and noted 
 
 ### Credits
 
-Jason Lee - Trainer IOD
-Jo Batkin - Trainer IOD
-The whole IOD cohort 
-Web Dev Simplified - https://www.youtube.com/@WebDevSimplified - General help
-Codevolution - https://www.youtube.com/@Codevolution - Material Ui guides
+* Jason Lee - Trainer IOD
+* Jo Batkin - Trainer IOD
+* The whole IOD cohort 
+* Web Dev Simplified - https://www.youtube.com/@WebDevSimplified - General help
+* Codevolution - https://www.youtube.com/@Codevolution - Material Ui guides
 
 ### License  
 
