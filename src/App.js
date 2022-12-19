@@ -2,6 +2,10 @@ import React from 'react';
 import { useState } from 'react'
 import { AppRoutes } from './routes/routes';
 import { MuiNavbar } from './components/MuiNavbar';
+// import FirebaseLogin from './components/FirebaseLogin'
+// import 'firebase/auth';
+
+
 
 
 // // custom hook
@@ -57,11 +61,11 @@ function App() {
 
   return (
     <div className="container1">
-
+     
       <MuiNavbar />
-      
+      {/* <FirebaseLogin /> */}
       <AppRoutes addTask={addTask} /> {/* just need to make sure you pass the props to the routes so the CustomForm component can work when called from there */}
-
+       
       <header>
         <h1>Sign In Above</h1>
       </header>
